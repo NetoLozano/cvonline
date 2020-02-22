@@ -1,0 +1,91 @@
+<div class="box text-center">
+  <img src="assets/img/me.jpg" alt="Ernesto Lozano Gonzalez" class="img-thumbnail mt-2" width="175px" height="175px"> 
+</div>
+<div class="mdiv">
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 col-sm-12 pl-0 pr-0">
+      <div class="sidebar text-center">
+        <div class="container  p-5">
+          <div class="shr">
+           <h3 class="pt-3">Contacto</h3>
+           <hr>
+          </div> 
+           <br>
+           <i class="fab fa-github fa-5x" aria-hidden="true"></i><br>
+          <a href="https://www.github.com/NetoLozano" class="btn btn-outline-info text-decoration-none" target="_blank">Neto_Lozano</a>
+          <hr>
+          <i class="fab fa-whatsapp fa-5x" aria-hidden="true"></i><br>
+          <a href="https://wa.me/524151493013" class="btn btn-outline-info text-decoration-none p-1" target="_blank">Whatsapp</a>
+<hr>
+<i class="fab fa-linkedin fa-5x" aria-hidden="true"></i>
+<br>
+          <a href="https://www.linkedin.com/in/ernesto-lozano-gonzalez-8a4206b4/" class="btn btn-outline-info text-decoration-none" target="_blank">Linkedin</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-10">
+      <div class="container">
+        <div class="row " >
+          <div class="col-lg-6 col-sm-12">
+            <div class="hr"><h2><b><i class="fas fa-graduation-cap fa-1x"></i>  Educación</b></h2></div>
+            <hr>
+            <div class="">
+            <h4><b>Instituto Sanmiguelense de Estudios Superiores (2014-2018).</b></h4>
+            <p><b><i>Ing. en Sistemas y Desarrollo de Software.</i></b></p>
+          </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="hr"><h2><b><i class="fas fa-briefcase fa-1x"></i>  Experiencia Laboral</b></h2></div>
+            <hr>
+            <div class="">
+            <h4><b>RAFI SYSCOM MÉXICO (2014-2018).</b></h4>
+            <p>
+              <b><i>Interno de IT.</i></b>
+              <br>
+              <b>Tareas Realizadas:</b> Mantenimiento e Instalación de Software a Equipos de Compúto y Dispositivos Móviles.
+            </p>
+          </div>
+
+          
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+      <div class="row">
+       <div class="col-12">
+        <div class="hr"><h2><b><i class="fas fa-star fa-1x"></i>  Habilidades</b></h2></div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <div class="container">
+              <div *ngFor="let skill of skills">
+                <label><b>{{skill.nombre}}</b></label>
+                <div class="progress">
+                  <div  class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width': skill.porcentaje + '%'}">{{skill.porcentaje}}%</div>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+          <div class="col-sm-12 col-lg-6"> <div class="container">
+            <div *ngFor="let skill of skills2">
+              <label><b>{{skill.nombre}}</b></label>
+              <div class="progress">
+                <div  class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width': skill.porcentaje + '%'}">{{skill.porcentaje}}%</div>
+                
+              </div>
+            </div>
+            <br>
+          </div></div>
+
+        </div>
+        </div>
+       </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
